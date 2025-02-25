@@ -1,0 +1,135 @@
+.header {
+    background-image: url("../../assets/phone.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.9s;
+    cursor: pointer;
+
+    & img {
+        max-width: 80px;
+        height: 80px;
+
+    }
+
+    & h1 {
+        font-style: italic;
+        font-weight: 900;
+        font-size: clamp(14px, 2vw, 50px);
+        color: #fff;
+
+        & span {
+            display: block;
+            font-weight: 600;
+            font-size: clamp(10px, 2vw, 30px);
+        }
+    }
+
+
+}
+
+.logo:hover {
+    transform: scale(0.9);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+
+    & li {
+
+        list-style: none;
+        font-size: clamp(8px, 2w, 20px);
+
+        & ::before {
+            content: "‣";
+            font-size: clamp(12px, 2vw, 30px);
+
+        }
+    }
+
+    & a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp(12px, 2vw, 30px);
+        color: rgba(255, 255, 255, 0.5);
+        transition: all 0.9s;
+        gap: 5px;
+    }
+}
+
+.active_nav {
+    color: #ffffff !important;
+}
+
+.nav a:hover {
+    color: #fff;
+
+}
+
+.header_bottom {
+    padding-top: 150px;
+
+    & li {
+        font-family: var(--font-family);
+        font-weight: 300;
+        font-size: clamp(15px, 2vw, 34px);
+        color: #fff;
+        padding-bottom: 5px;
+        margin-left: 60px;
+    }
+
+    & button {
+        display: block;
+        font-family: var(--font-family);
+        background-color: white;
+        font-weight: 600;
+        font-size: clamp(14px, 2vw, 34px);
+        text-align: center;
+        color: #e73ab8;
+        border-radius: 10px;
+        width: 331px;
+        height: 63px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .header_top {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header_bottom {
+        & button {
+            margin: 0 auto;
+
+        }
+
+    }
+}
