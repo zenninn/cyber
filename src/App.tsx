@@ -15,6 +15,8 @@ export default function App() {
         <Route path="/tarif" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/bron" element={<Landing />} />
+
+        
    
       </Routes>
     </BrowserRouter>
