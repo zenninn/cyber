@@ -3,19 +3,18 @@ import "./App.css"
 import { Routes } from "react-router"
 import Home from "./pages/Home"
 import About from "./About"
-import PageNotFound from "./PageNotFound"
-import Zone from "./components/Zone/Zone"
 import Landing from "./pages/Landing"
+import Error from "./pages/Error"
+
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tarif" element={<About />} />
-        <Route path="*" element={<PageNotFound />} />
-        <Route path="/bron" element={<Landing />} />
-
+        <Route path="/about" element={<About />} />
+        <Route path="/land" element={<Landing />} />
+        <Route path="/eror" element={<Error/>} />
         
    
       </Routes>
