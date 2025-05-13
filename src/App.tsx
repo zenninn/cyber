@@ -15,6 +15,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/land" element={<Landing />} />
         <Route path="/eror" element={<Error/>} />
+        <Route path="/"
         
    
       </Routes>

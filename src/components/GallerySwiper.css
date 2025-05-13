@@ -1,0 +1,25 @@
+.swiper-wrapper-custom {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .gallery-swiper .swiper-slide {
+    transition: transform 0.3s ease;
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  
+  .gallery-swiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .gallery-swiper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
